@@ -1,0 +1,165 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+ALLOWED_HOSTS	django_demo_project/settings.py	/^ALLOWED_HOSTS = []$/;"	v
+AUTH_PASSWORD_VALIDATORS	django_demo_project/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+BASE_DIR	django_demo_project/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+DATABASES	django_demo_project/settings.py	/^DATABASES = {$/;"	v
+DEBUG	django_demo_project/settings.py	/^DEBUG = True$/;"	v
+INSTALLED_APPS	django_demo_project/settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	django_demo_project/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MEDIA_DIR	django_demo_project/settings.py	/^MEDIA_DIR = os.path.join(BASE_DIR,'media')$/;"	v
+MEDIA_ROOT	django_demo_project/settings.py	/^MEDIA_ROOT = MEDIA_DIR$/;"	v
+MEDIA_URL	django_demo_project/settings.py	/^MEDIA_URL = '\/media\/'/;"	v
+MIDDLEWARE	django_demo_project/settings.py	/^MIDDLEWARE = [$/;"	v
+ROOT_URLCONF	django_demo_project/settings.py	/^ROOT_URLCONF = 'django_demo_project.urls'$/;"	v
+SECRET_KEY	django_demo_project/settings.py	/^SECRET_KEY = '30#(mlwf*%at1bqigk$(jl&a*o!ep(h871ipl+*m-9v)q@52%!'$/;"	v
+STATICFILES_DIRS	django_demo_project/settings.py	/^STATICFILES_DIRS = [STATIC_DIR, ]$/;"	v
+STATIC_DIR	django_demo_project/settings.py	/^STATIC_DIR = os.path.join(BASE_DIR,'static')$/;"	v
+STATIC_URL	django_demo_project/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+TEMPLATES	django_demo_project/settings.py	/^TEMPLATES = [$/;"	v
+TEMPLATE_DIR	django_demo_project/settings.py	/^TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')$/;"	v
+TIME_ZONE	django_demo_project/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	django_demo_project/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	django_demo_project/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	django_demo_project/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	django_demo_project/settings.py	/^WSGI_APPLICATION = 'django_demo_project.wsgi.application'$/;"	v
+os	django_demo_project/settings.py	/^import os$/;"	i
+admin	django_demo_project/urls.py	/^from django.contrib import admin$/;"	i
+include	django_demo_project/urls.py	/^from django.conf.urls import include$/;"	i
+settings	django_demo_project/urls.py	/^from django.conf import settings$/;"	i
+static	django_demo_project/urls.py	/^from django.conf.urls.static import static$/;"	i
+url	django_demo_project/urls.py	/^from django.conf.urls import url$/;"	i
+urlpatterns	django_demo_project/urls.py	/^urlpatterns = [$/;"	v
+views	django_demo_project/urls.py	/^from rango import views$/;"	i
+application	django_demo_project/wsgi.py	/^application = get_wsgi_application()$/;"	v
+get_wsgi_application	django_demo_project/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	i
+os	django_demo_project/wsgi.py	/^import os$/;"	i
+Category	forms.py	/^from rango.models import Category,Page$/;"	i
+CategoryForm	forms.py	/^class CategoryForm(forms.ModelForm):$/;"	c
+Meta	forms.py	/^    class Meta:$/;"	c	class:CategoryForm
+Meta	forms.py	/^    class Meta:$/;"	c	class:PageForm
+Page	forms.py	/^from rango.models import Category,Page$/;"	i
+PageForm	forms.py	/^class PageForm(forms.ModelForm):$/;"	c
+exclude	forms.py	/^        exclude = ('category',)/;"	v	class:PageForm.Meta
+fields	forms.py	/^        fields = ('name',)$/;"	v	class:CategoryForm.Meta
+forms	forms.py	/^from django import forms$/;"	i
+likes	forms.py	/^    likes = forms.IntegerField(widget=forms.HiddenInput(),initial=0)$/;"	v	class:CategoryForm
+model	forms.py	/^        model = Category$/;"	v	class:CategoryForm.Meta
+model	forms.py	/^        model = Page$/;"	v	class:PageForm.Meta
+name	forms.py	/^    name = forms.CharField(max_length=128,help_text="Please enter the category name.")$/;"	v	class:CategoryForm
+slug	forms.py	/^    slug = forms.CharField(widget=forms.HiddenInput(),required=False)$/;"	v	class:CategoryForm
+title	forms.py	/^    title = forms.CharField(max_length=128,help_text="Please enter the title of the page.")$/;"	v	class:PageForm
+url	forms.py	/^    url = forms.URLField(max_length=200,help_text="Please enter the url of the page.")$/;"	v	class:PageForm
+views	forms.py	/^    views = forms.IntegerField(widget=forms.HiddenInput(),initial=0)$/;"	v	class:CategoryForm
+views	forms.py	/^    views = forms.IntegerField(widget=forms.HiddenInput(),initial=0)$/;"	v	class:PageForm
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+django	manage.py	/^            import django$/;"	i
+execute_from_command_line	manage.py	/^        from django.core.management import execute_from_command_line$/;"	i
+os	manage.py	/^import os$/;"	i
+sys	manage.py	/^import sys$/;"	i
+Category	populate_rango.py	/^from rango.models import Category, Page$/;"	i
+Page	populate_rango.py	/^from rango.models import Category, Page$/;"	i
+add_cat	populate_rango.py	/^def add_cat(name, views=0, likes=0):$/;"	f
+add_page	populate_rango.py	/^def add_page(cat, title, url, views=0):$/;"	f
+django	populate_rango.py	/^import django$/;"	i
+os	populate_rango.py	/^import os$/;"	i
+populate	populate_rango.py	/^def populate():$/;"	f
+Category	rango/admin.py	/^from rango.models import Category,Page$/;"	i
+CategoryAdmin	rango/admin.py	/^class CategoryAdmin(admin.ModelAdmin):$/;"	c
+Page	rango/admin.py	/^from rango.models import Category,Page$/;"	i
+admin	rango/admin.py	/^from django.contrib import admin$/;"	i
+prepopulated_fields	rango/admin.py	/^	prepopulated_fields = {'slug':('name',)}$/;"	v	class:CategoryAdmin
+AppConfig	rango/apps.py	/^from django.apps import AppConfig$/;"	i
+RangoConfig	rango/apps.py	/^class RangoConfig(AppConfig):$/;"	c
+name	rango/apps.py	/^    name = 'rango'$/;"	v	class:RangoConfig
+unicode_literals	rango/apps.py	/^from __future__ import unicode_literals$/;"	i
+Category	rango/forms.py	/^from rango.models import Category,Page$/;"	i
+CategoryForm	rango/forms.py	/^class CategoryForm(forms.ModelForm):$/;"	c
+Meta	rango/forms.py	/^    class Meta:$/;"	c	class:CategoryForm
+Meta	rango/forms.py	/^    class Meta:$/;"	c	class:PageForm
+Page	rango/forms.py	/^from rango.models import Category,Page$/;"	i
+PageForm	rango/forms.py	/^class PageForm(forms.ModelForm):$/;"	c
+exclude	rango/forms.py	/^        exclude = ('category',)/;"	v	class:PageForm.Meta
+fields	rango/forms.py	/^        fields = ('name',)$/;"	v	class:CategoryForm.Meta
+forms	rango/forms.py	/^from django import forms$/;"	i
+likes	rango/forms.py	/^    likes = forms.IntegerField(widget=forms.HiddenInput(),initial=0)$/;"	v	class:CategoryForm
+model	rango/forms.py	/^        model = Category$/;"	v	class:CategoryForm.Meta
+model	rango/forms.py	/^        model = Page$/;"	v	class:PageForm.Meta
+name	rango/forms.py	/^    name = forms.CharField(max_length=128,help_text="Please enter the category name.")$/;"	v	class:CategoryForm
+slug	rango/forms.py	/^    slug = forms.CharField(widget=forms.HiddenInput(),required=False)$/;"	v	class:CategoryForm
+title	rango/forms.py	/^    title = forms.CharField(max_length=128,help_text="Please enter the title of the page.")$/;"	v	class:PageForm
+url	rango/forms.py	/^    url = forms.URLField(max_length=200,help_text="Please enter the url of the page.")$/;"	v	class:PageForm
+views	rango/forms.py	/^    views = forms.IntegerField(widget=forms.HiddenInput(),initial=0)$/;"	v	class:CategoryForm
+views	rango/forms.py	/^    views = forms.IntegerField(widget=forms.HiddenInput(),initial=0)$/;"	v	class:PageForm
+Migration	rango/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+db	rango/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+deletion	rango/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+dependencies	rango/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+django	rango/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+fields	rango/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+initial	rango/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+migrations	rango/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
+models	rango/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
+models	rango/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+name	rango/migrations/0001_initial.py	/^            name='Category',$/;"	v	class:Migration
+name	rango/migrations/0001_initial.py	/^            name='Page',$/;"	v	class:Migration
+operations	rango/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+unicode_literals	rango/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	i
+Migration	rango/migrations/0002_auto_20161213_0935.py	/^class Migration(migrations.Migration):$/;"	c
+dependencies	rango/migrations/0002_auto_20161213_0935.py	/^    dependencies = [$/;"	v	class:Migration
+field	rango/migrations/0002_auto_20161213_0935.py	/^            field=models.IntegerField(default=0),$/;"	v	class:Migration
+migrations	rango/migrations/0002_auto_20161213_0935.py	/^from django.db import migrations, models$/;"	i
+model_name	rango/migrations/0002_auto_20161213_0935.py	/^            model_name='category',$/;"	v	class:Migration
+models	rango/migrations/0002_auto_20161213_0935.py	/^from django.db import migrations, models$/;"	i
+name	rango/migrations/0002_auto_20161213_0935.py	/^            name='category',$/;"	v	class:Migration
+name	rango/migrations/0002_auto_20161213_0935.py	/^            name='likes',$/;"	v	class:Migration
+name	rango/migrations/0002_auto_20161213_0935.py	/^            name='view',$/;"	v	class:Migration
+operations	rango/migrations/0002_auto_20161213_0935.py	/^    operations = [$/;"	v	class:Migration
+options	rango/migrations/0002_auto_20161213_0935.py	/^            options={'verbose_name_plural': 'Categories'},$/;"	v	class:Migration
+unicode_literals	rango/migrations/0002_auto_20161213_0935.py	/^from __future__ import unicode_literals$/;"	i
+Migration	rango/migrations/0003_category_slug.py	/^class Migration(migrations.Migration):$/;"	c
+dependencies	rango/migrations/0003_category_slug.py	/^    dependencies = [$/;"	v	class:Migration
+field	rango/migrations/0003_category_slug.py	/^            field=models.SlugField(default=0),$/;"	v	class:Migration
+migrations	rango/migrations/0003_category_slug.py	/^from django.db import migrations, models$/;"	i
+model_name	rango/migrations/0003_category_slug.py	/^            model_name='category',$/;"	v	class:Migration
+models	rango/migrations/0003_category_slug.py	/^from django.db import migrations, models$/;"	i
+name	rango/migrations/0003_category_slug.py	/^            name='slug',$/;"	v	class:Migration
+operations	rango/migrations/0003_category_slug.py	/^    operations = [$/;"	v	class:Migration
+preserve_default	rango/migrations/0003_category_slug.py	/^            preserve_default=False,$/;"	v	class:Migration
+unicode_literals	rango/migrations/0003_category_slug.py	/^from __future__ import unicode_literals$/;"	i
+Category	rango/models.py	/^class Category(models.Model):$/;"	c
+Meta	rango/models.py	/^    class Meta:$/;"	c	class:Category
+Page	rango/models.py	/^class Page(models.Model):$/;"	c
+__str__	rango/models.py	/^    def __str__(self):$/;"	m	class:Category	file:
+__str__	rango/models.py	/^    def __str__(self):$/;"	m	class:Page	file:
+__unicode__	rango/models.py	/^    def __unicode__(self):$/;"	m	class:Category	file:
+__unicode__	rango/models.py	/^    def __unicode__(self):$/;"	m	class:Page	file:
+category	rango/models.py	/^    category = models.ForeignKey(Category)$/;"	v	class:Page
+likes	rango/models.py	/^    likes = models.IntegerField(default=0)$/;"	v	class:Category
+models	rango/models.py	/^from django.db import models$/;"	i
+name	rango/models.py	/^    name = models.CharField(max_length=128, unique=True)$/;"	v	class:Category
+save	rango/models.py	/^    def save(self, *args, **kwargs):$/;"	m	class:Category
+slug	rango/models.py	/^    slug = models.SlugField(blank=True)$/;"	v	class:Category
+slugify	rango/models.py	/^from django.template.defaultfilters import slugify$/;"	i
+title	rango/models.py	/^    title = models.CharField(max_length=128)$/;"	v	class:Page
+unicode_literals	rango/models.py	/^from __future__ import unicode_literals$/;"	i
+url	rango/models.py	/^    url = models.URLField()$/;"	v	class:Page
+verbose_name_plural	rango/models.py	/^        verbose_name_plural = 'Categories'$/;"	v	class:Category.Meta
+view	rango/models.py	/^    view = models.IntegerField(default=0)$/;"	v	class:Category
+views	rango/models.py	/^    views = models.IntegerField(default=0)$/;"	v	class:Page
+TestCase	rango/tests.py	/^from django.test import TestCase$/;"	i
+url	rango/urls.py	/^from django.conf.urls import url$/;"	i
+urlpatterns	rango/urls.py	/^urlpatterns = [$/;"	v
+views	rango/urls.py	/^from rango import views$/;"	i
+Category	rango/views.py	/^from rango.models import Category, Page$/;"	i
+CategoryForm	rango/views.py	/^from rango.forms import CategoryForm$/;"	i
+HttpResponse	rango/views.py	/^from django.http import HttpResponse$/;"	i
+Page	rango/views.py	/^from rango.models import Category, Page$/;"	i
+about	rango/views.py	/^def about(request):$/;"	f
+add_category	rango/views.py	/^def add_category(request):$/;"	f
+index	rango/views.py	/^def index(request):$/;"	f
+render	rango/views.py	/^from django.shortcuts import render$/;"	i
+show_category	rango/views.py	/^def show_category(request, category_name_slug):$/;"	f

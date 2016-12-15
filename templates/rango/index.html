@@ -9,12 +9,16 @@
 	<div>
 		hey there partner!<br/>
 	</div>
+
+	<div>
+		<h3>Most Liked Categories</h3>
+	</div>
 	<div>
 	{% if categories %}
 	<ul>
 		{% for category in categories %}
 			<li>
-			<a href="/rango/category/{{category.slug}}">{{category.name}}</a>
+				<a href="/rango/category/{{category.slug}}">{{category.name}}</a>
 			</li>
 		{% endfor %}
 	</ul>
@@ -22,7 +26,26 @@
 		<strong>There are no categories present.</strong>
 	{% endif %}
 	</div>
+
 	<div>
+		<h3>Most Viewed Pages</h3>
+	</div>
+	<div>
+	{% if pages %}
+	<ul>
+		{% for page in pages %}
+			<li>
+				<a href="{{page.url}}">{{page.title}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<strong>There are no categories present.</strong>
+	{% endif %}
+	</div>
+
+	<div>
+		<a href="/rango/add_category/">Add a New Category</a><br />
 		<a href="/rango/about">About</a><br/>
 		<img src="{% static "images/logo.png" %}" alt="Picture of logo" />
 	</div>
