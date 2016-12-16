@@ -1,7 +1,9 @@
+#!/usr/bin/env python
+# coding=utf-8
 from django.shortcuts import render
 from django.http import HttpResponse
 from rango.models import Category, Page
-from rango.forms import CategoryForm
+from rango.forms import CategoryForm, PageForm
 
 
 def index(request):
@@ -39,4 +41,27 @@ def add_category(request):
             return index(request)
         else:
             print form.errors
+    # 确保如果表单信息有错的话，能够在添加category的页面上显示出错误信息，因为含有form.errors的信息被传回(render)了add_category.html
     return render(request, 'rango/add_category.html', {'form': form})
+
+
+def add_page(request, category_name_slug):
+    try:
+        category = Category.objects.get(slug=category_name_slug)
+    except Category.DoesNotExit:
+        category = None
+
+    form = PageForm()
+    if request.method == 'POST':
+        form = PageForm(request.POST)
+        if form.is_valid():
+            if category:
+                page = form.save(commit=False)
+                page.category = category
+                # page.views = 0
+                page.save()
+            return show_category(request, category_name_slug)
+        else:
+            print form.errors
+    context_dict = {'form': form, 'category': category}
+    return render(request, 'rango/add_page.html', context_dict)
