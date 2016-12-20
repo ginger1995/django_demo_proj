@@ -14,6 +14,7 @@
 
 	<div>
 	{% block sidebar_block %}
+        <!--注意：此处↓↓↓的自定义模板标签为get_category_list，并附带了一个参数category。用户在cats.html点击了任意目录名称后，根据其a标签href属性可进行url匹配，然后附带着slug参数跳转到category.html页面，这一过程是由view里的show_category方法驱动的，此方法最终向显示页面category.html传递了参数字典，其中就包括key为category的参数，于是本页面便可引用之（本页面之所以可以引用是因为本页面被category.html继承了），将其交付给自定义的模板标签rango_template_tags里面的get_category_list方法作为参数进一步传回给cats.html，cats.html接到参数后便可知道用户当前点选了那个category，进而对其斜体或加粗显示-->
 		{% get_category_list category %}
 	{% endblock %}
 	</div>
